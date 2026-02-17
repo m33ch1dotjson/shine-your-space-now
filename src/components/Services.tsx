@@ -3,14 +3,17 @@ import workPhoto from "@/assets/work-photo.jpg";
 import serviceDeepClean from "@/assets/service-deep-clean.jpg";
 import serviceWindow from "@/assets/service-window.jpg";
 import serviceOffice from "@/assets/service-office.jpg";
+import serviceMoving from "@/assets/service-moving.jpg";
+import serviceRenovation from "@/assets/service-renovation.jpg";
+import serviceHoliday from "@/assets/service-holiday.jpg";
 import { Building2, Home, Truck, Sparkles, Hotel, DoorOpen, Paintbrush } from "lucide-react";
 
 const services = [
   { key: "office", icon: Building2, image: serviceOffice },
-  { key: "moving", icon: Truck, image: null },
-  { key: "renovation", icon: Paintbrush, image: null },
+  { key: "moving", icon: Truck, image: serviceMoving },
+  { key: "renovation", icon: Paintbrush, image: serviceRenovation },
   { key: "window", icon: DoorOpen, image: serviceWindow },
-  { key: "holiday", icon: Hotel, image: null },
+  { key: "holiday", icon: Hotel, image: serviceHoliday },
   { key: "deep", icon: Sparkles, image: serviceDeepClean },
   { key: "private", icon: Home, image: workPhoto },
 ];
