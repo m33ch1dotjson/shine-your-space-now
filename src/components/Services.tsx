@@ -1,11 +1,12 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import workPhoto from "@/assets/work-photo.jpg";
+
 import serviceDeepClean from "@/assets/service-deep-clean.jpg";
 import serviceWindow from "@/assets/service-window.jpg";
 import serviceOffice from "@/assets/service-office.jpg";
 import serviceMoving from "@/assets/service-moving.jpg";
 import serviceRenovation from "@/assets/service-renovation.jpg";
 import serviceHoliday from "@/assets/service-holiday.jpg";
+import servicePrivate from "@/assets/service-private.jpg";
 import { Building2, Home, Truck, Sparkles, Hotel, DoorOpen, Paintbrush } from "lucide-react";
 
 const services = [
@@ -15,7 +16,7 @@ const services = [
   { key: "window", icon: DoorOpen, image: serviceWindow },
   { key: "holiday", icon: Hotel, image: serviceHoliday },
   { key: "deep", icon: Sparkles, image: serviceDeepClean },
-  { key: "private", icon: Home, image: workPhoto },
+  { key: "private", icon: Home, image: servicePrivate },
 ];
 
 const Services = () => {
