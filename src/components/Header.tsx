@@ -7,14 +7,13 @@ const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isAboutPage = typeof window !== "undefined" && window.location.pathname === "/about";
-  const base = isAboutPage ? "/" : "";
+  const isSubPage = typeof window !== "undefined" && window.location.pathname !== "/";
+  const base = isSubPage ? "/" : "";
 
   const navLinks = [
     { href: `${base}#services`, label: t("nav.services") },
     { href: "/about", label: t("nav.about") },
-    { href: `${base}#area`, label: t("nav.area") },
-    { href: `${base}#contact`, label: t("nav.contact") },
+    { href: "/contact", label: t("nav.contact") },
   ];
 
   return (
