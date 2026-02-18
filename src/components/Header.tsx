@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
@@ -7,18 +7,21 @@ const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const isAboutPage = typeof window !== "undefined" && window.location.pathname === "/about";
+  const base = isAboutPage ? "/" : "";
+
   const navLinks = [
-    { href: "#services", label: t("nav.services") },
+    { href: `${base}#services`, label: t("nav.services") },
     { href: "/about", label: t("nav.about") },
-    { href: "#area", label: t("nav.area") },
-    { href: "#contact", label: t("nav.contact") },
+    { href: `${base}#area`, label: t("nav.area") },
+    { href: `${base}#contact`, label: t("nav.contact") },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <img src={logo} alt="Shine by Natalia" className="h-14 w-auto rounded-lg" />
+          <img src={logo} alt="Shine by Natalia" className="h-20 w-auto" />
         </a>
 
         {/* Desktop nav */}
