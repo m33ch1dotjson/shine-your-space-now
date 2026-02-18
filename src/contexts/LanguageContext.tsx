@@ -10,13 +10,12 @@ const translations: Translations = {
   // Nav
   "nav.services": { nl: "Diensten", en: "Services" },
   "nav.about": { nl: "Over ons", en: "About" },
-  "nav.reviews": { nl: "Beoordelingen", en: "Reviews" },
   "nav.area": { nl: "Werkgebied", en: "Service Area" },
   "nav.contact": { nl: "Contact", en: "Contact" },
 
   // Hero
   "hero.title": { nl: "Professionele Schoonmaakdiensten", en: "Professional Cleaning Services" },
-  "hero.subtitle": { nl: "Wij zorgen ervoor dat uw ruimte straalt — van kantoren tot privéwoningen in heel Noord-Brabant.", en: "We make your space shine — from offices to private homes across Noord-Brabant." },
+  "hero.subtitle": { nl: "Wij zorgen ervoor dat uw ruimte straalt, van kantoren tot privéwoningen in heel Noord-Brabant.", en: "We make your space shine, from offices to private homes across Noord-Brabant." },
   "hero.cta": { nl: "Neem contact op", en: "Get in Touch" },
   "hero.services": { nl: "Onze diensten", en: "Our Services" },
 
