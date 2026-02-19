@@ -20,9 +20,9 @@ const ContactContent = () => {
     : "Available on weekdays from 08:00 to 18:00. Free quote on request.";
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      <main className="pt-36 pb-16">
+      <main className="pt-36 pb-16 flex-1">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
