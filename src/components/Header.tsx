@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
