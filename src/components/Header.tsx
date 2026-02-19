@@ -21,6 +21,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <img src={logo} alt="Shine by Natalia" className="h-20 w-auto" />
+          <span className="hidden sm:block font-heading font-bold text-lg text-foreground leading-tight">
+            Shine By Natalia
+          </span>
         </a>
 
         {/* Desktop nav */}
