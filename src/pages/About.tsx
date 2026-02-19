@@ -1,8 +1,8 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { LanguageProvider } from "@/contexts/LanguageContext";
 import nataliaWork from "@/assets/natalia-work.jpg";
+
 
 const AboutContent = () => {
   const { language } = useLanguage();
@@ -57,10 +57,7 @@ const AboutContent = () => {
   );
 };
 
-const About = () => (
-  <LanguageProvider>
-    <AboutContent />
-  </LanguageProvider>
-);
+const About = () => <AboutContent />;
+
 
 export default About;
