@@ -1,4 +1,4 @@
-import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { MapPin, Mail, Phone } from "lucide-react";
@@ -77,10 +77,7 @@ const ContactContent = () => {
   );
 };
 
-const ContactPage = () => (
-  <LanguageProvider>
-    <ContactContent />
-  </LanguageProvider>
-);
+const ContactPage = () => <ContactContent />;
+
 
 export default ContactPage;
